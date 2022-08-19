@@ -4,7 +4,7 @@ import HomePage from "./HomePage/HomePage";
 
 function App() {
   return (
-    <div className="p-8 font-Montserrat">
+    <div className="px-8 font-Montserrat">
       <Header />
       <HomePage />
       <Footer />
