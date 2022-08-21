@@ -4,7 +4,7 @@ import {
 } from '@tanstack/react-query';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import HomePage from './HomePage/HomePage';
+import HomePage from './Pages/HomePage';
 
 const queryClient = new QueryClient();
 

@@ -1,7 +1,7 @@
-import CatFrame from '../Components/CatFrame';
-import SearchBar from '../Components/SearchBar';
-import useWindowDimensions from '../Hooks/useWindowDimensions';
-import { ReactComponent as CatLogo } from '../logo.svg';
+import CatFrame from '../../Components/CatFrame';
+import SearchBar from '../../Components/SearchBar';
+import useWindowDimensions from '../../Hooks/useWindowDimensions';
+import { ReactComponent as CatLogo } from '../../logo.svg';
 import MostSearch from './MostSearch';
 
 function HomePage() {
