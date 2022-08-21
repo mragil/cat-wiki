@@ -1,11 +1,9 @@
-import React from 'react'
-
-const CatFrame = ({ image }) => {
+function CatFrame({ image, className = '' }) {
   return (
-    <div className=''>
-        <img src={image} alt="cat" />
+    <div className="">
+      <img src={image} alt="cat" className={className} />
     </div>
-  )
+  );
 }
 
-export default CatFrame
+export default CatFrame;
