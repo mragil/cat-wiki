@@ -13,7 +13,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="px-8 font-Montserrat">
+      <div className="px-8 py-2 font-Montserrat">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

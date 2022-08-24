@@ -11,21 +11,9 @@ function MostSearch() {
     .get('http://localhost:3001/cats/most-searched')
     .then((res) => res.data));
 
-  if (isLoading) {
-    return (
-      <div>
-        <h1>Loading sayang...</h1>
-      </div>
-    );
-  }
+  if (isLoading) return <div>Loading sayang...</div>;
 
-  if (error) {
-    return (
-      <div>
-        <h1>Error sayang...</h1>
-      </div>
-    );
-  }
+  if (error) return <div>Error sayang...</div>;
 
   const navigateToDetails = (breedId) => {
     navigate(`/cat/details/${breedId}`);
