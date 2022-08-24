@@ -2,15 +2,15 @@
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: ["'Nunito Sans', sans-serif"]
+        Montserrat: ["'Nunito Sans', sans-serif"],
       },
       colors: {
-        accent: "#E3E1DC"
+        accent: '#E3E1DC',
       },
       backgroundImage: {
         'hero-sm': "url('../public/image/hero-sm.png')",
@@ -18,10 +18,14 @@ module.exports = {
         'hero-lg': "url('../public/image/hero-lg.png')",
       },
       spacing: {
-        '68': '17rem',
-        '94': '23rem'
-      }
+        68: '17rem',
+        94: '23rem',
+      },
+      gridTemplateColumns: {
+        level: 'repeat(2, minmax(0, 0.3fr))',
+      },
+
     },
   },
   plugins: [],
-}
+};
