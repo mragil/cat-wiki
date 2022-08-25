@@ -15,7 +15,7 @@ function OtherPhoto({ breedId }) {
     <div>
       <h1 className="font-bold text-3xl text-center mb-3 md:text-left">Other Photos</h1>
       <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
-        {data.map((image) => <CatFrame key={image.id} image={image.url} className="w-72 h-72 rounded-3xl" />)}
+        {data.map((image) => <CatFrame key={image.id} image={image.url || '/image/image-3.png'} className="w-72 h-72 rounded-3xl" />)}
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function MostSearch() {
       <div className="grid grid-cols-2 gap-5 md:flex md:justify-between">
         {data.map((cat) => (
           <div role="presentation" className="text-center cursor-pointer" key={cat.id} onClick={() => navigateToDetails(cat.id)}>
-            <CatFrame image={cat.image.url} className="w-72 h-72 rounded-3xl" />
+            <CatFrame image={cat.image.url || '/image/image-3.png'} className="w-72 h-72 rounded-3xl" />
             <p className="mt-4 font-bold">{cat.name}</p>
           </div>
         ))}

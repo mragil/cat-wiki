@@ -20,7 +20,7 @@ function CatDetail() {
   return (
     <>
       <div className="flex flex-col items-center justify-center mb-7 md:flex-row md:justify-start md:items-center md:gap-10">
-        <CatFrame image={data.image.url} className="w-full h-72 rounded-3xl mb-5 md:justify-center" />
+        <CatFrame image={data.image.url || '/image/image-3.png'} className="w-full h-72 rounded-3xl mb-5 md:justify-center" />
         <div>
           <h1 className="font-bold text-3xl text-center mb-3">{data.name}</h1>
           <p className="text-justify mb-3">{data.description}</p>
