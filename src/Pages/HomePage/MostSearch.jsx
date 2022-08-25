@@ -9,7 +9,9 @@ function MostSearch() {
     isLoading, error, data,
   } = useQuery(['mostSearchedData'], () => axios
     .get('http://localhost:3001/cats/most-searched')
-    .then((res) => res.data));
+    .then((res) => res.data), {
+    refetchOnWindowFocus: false,
+  });
 
   if (isLoading) return <div>Loading sayang...</div>;
 
