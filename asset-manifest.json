@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cat-wiki/static/css/main.3df17e25.css",
+    "main.js": "/cat-wiki/static/js/main.9faafafa.js",
+    "static/js/787.827bf937.chunk.js": "/cat-wiki/static/js/787.827bf937.chunk.js",
+    "static/media/hero-lg.png": "/cat-wiki/static/media/hero-lg.b8e8da0106a66d0639ce.png",
+    "static/media/hero-md.png": "/cat-wiki/static/media/hero-md.c5e665e1f33e3c00d361.png",
+    "static/media/hero-sm.png": "/cat-wiki/static/media/hero-sm.6c62aad8422b90729005.png",
+    "static/media/logo.svg": "/cat-wiki/static/media/logo.8c50df4e7b42fed52236bb6adce09e5a.svg",
+    "index.html": "/cat-wiki/index.html",
+    "main.3df17e25.css.map": "/cat-wiki/static/css/main.3df17e25.css.map",
+    "main.9faafafa.js.map": "/cat-wiki/static/js/main.9faafafa.js.map",
+    "787.827bf937.chunk.js.map": "/cat-wiki/static/js/787.827bf937.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3df17e25.css",
+    "static/js/main.9faafafa.js"
+  ]
+}
