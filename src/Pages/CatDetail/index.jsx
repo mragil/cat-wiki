@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import catWiki from '../../api/catsWiki';
 import CatFrame from '../../Components/CatFrame';
 import LevelBar from '../../Components/LevelBar';
 import OtherPhoto from './OtherPhoto';
@@ -10,7 +11,7 @@ function CatDetail() {
   const {
     isLoading, error, data,
   } = useQuery(['cat-details'], () => axios
-    .get(`http://localhost:3001/cats/breeds/${breedId}`)
+    .get(`${catWiki}/cats/breeds/${breedId}`)
     .then((res) => res.data));
 
   if (isLoading) return <div>Loading sayang...</div>;

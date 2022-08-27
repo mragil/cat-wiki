@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useState } from 'react';
+import catWiki from '../../api/catsWiki';
 import SuggestionBox from './SuggestionBox';
 
 function SearchBar({ placeholderText }) {
@@ -10,7 +11,7 @@ function SearchBar({ placeholderText }) {
   const {
     isLoading, error, data: suggestions,
   } = useQuery(['allBreeds'], () => axios
-    .get('http://localhost:3001/cats/breeds/all')
+    .get(`${catWiki}/cats/breeds/all`)
     .then((res) => res.data), {
     refetchOnWindowFocus: false,
   });

@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import catWiki from '../../api/catsWiki';
 import CatFrame from '../../Components/CatFrame';
 
 function MostSearch() {
@@ -8,7 +9,7 @@ function MostSearch() {
   const {
     isLoading, error, data,
   } = useQuery(['mostSearchedData'], () => axios
-    .get('http://localhost:3001/cats/most-searched')
+    .get(`${catWiki}/cats/most-searched`)
     .then((res) => res.data), {
     refetchOnWindowFocus: false,
   });
